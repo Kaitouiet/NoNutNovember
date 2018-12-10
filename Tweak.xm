@@ -99,7 +99,7 @@ static void reloadPrefs() {
 		prefs = [NSDictionary dictionaryWithContentsOfFile:kSettingsPath];
 	}
 
-	enabled = [prefs objectForKey:@"enabled"] ? [(NSNumber *)[prefs objectForKey:@"enabled"] boolValue] : true;
+  enabled = [prefs objectForKey:@"enabled"] ? [(NSNumber *)[prefs objectForKey:@"enabled"] boolValue] : true;
   titleNoti = [prefs objectForKey:@"titleNoti"] ? [prefs objectForKey:@"titleNoti"] : titleNoti;
   messageNoti = [prefs objectForKey:@"messageNoti"] ? [prefs objectForKey:@"messageNoti"] : messageNoti;
 
